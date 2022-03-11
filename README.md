@@ -1,9 +1,9 @@
 # microservices-march
 Welcome to Microservices March!
 
-[MM22-graphic](https://github.com/nginxinc/microservices-march/blob/8d4e309bce57a4bc94f0a39705988667cff4b4c5/CAMP-NGINX-MicroservicesMarch2022-SM-Unit1-1200x628-main@2x.png)
+![MM22-graphic](https://github.com/nginxinc/microservices-march/blob/8d4e309bce57a4bc94f0a39705988667cff4b4c5/CAMP-NGINX-MicroservicesMarch2022-SM-Unit1-1200x628-main@2x.png)
 
-This repo contains examples from the Microservices March lectures and hands-on labs. You can use these examples in your own environment, or ![register now](https://www.nginx.com/c/microservices-march-2022-kubernetes-networking/) to try out our browser-based labs.
+This repo contains examples from the Microservices March lectures and hands-on labs. You can use these examples in your own environment, or [register now](https://www.nginx.com/c/microservices-march-2022-kubernetes-networking/) to try out our browser-based labs.
 
 
 <h1>Lab 1: Reduce Kubernetes Latency with Autoscaling</h1>
