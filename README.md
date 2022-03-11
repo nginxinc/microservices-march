@@ -17,7 +17,7 @@ Watch the webinar ["Architecting Kubernetes Clusters for High-Traffic Websites"]
 
 <h1>Lab 2: Protect Kubernetes APIs with Rate Limiting</h1>
 
-[Access the example files.](https://github.com/nginxinc/microservices-march/tree/main/Lab%202%20-%20Protect%20Kubernetes%20APIs%20with%20Rate%20Limiting){:target="_blank"}
+[Access the example files.](https://github.com/nginxinc/microservices-march/tree/main/Lab%202%20-%20Protect%20Kubernetes%20APIs%20with%20Rate%20Limiting)
 
 Watch the webinar ["Exposing APIs in Kubernetes"](https://youtu.be/g-52agV8fFw) for a high-level overview on the flow of a packet, more on NodePort vs LoadBalancer vs Ingress, Routing Internal vs external traffic (multiple ingresses, IngressClasses), Authorization and Authentication (OIDC), Rate limiting, and Graceful shutdown in Kubernetes.
 
