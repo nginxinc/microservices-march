@@ -7,6 +7,7 @@ This repo contains examples from the Microservices March lectures and hands-on l
 
 
 <h1>Lab 1: Reduce Kubernetes Latency with Autoscaling</h1>
+
 [Access the example files.](https://github.com/nginxinc/microservices-march/tree/main/Lab%201%20-%20Reduce%20Kubernetes%20Latency%20with%20Autoscaling)
 
 Watch the webinar for a high-level overview of Architecting Kubernetes Clusters for High-Traffic Websites.
@@ -32,6 +33,7 @@ Watch the demo walkthrough for commentary on what you'll be doing and why.
     </iframe>
 
 <h1>Lab 2: Protect Kubernetes APIs with Rate Limiting</h1>
+
 [Access the example files.](https://github.com/nginxinc/microservices-march/tree/main/Lab%202%20-%20Protect%20Kubernetes%20APIs%20with%20Rate%20Limiting)
 
 Watch the webinar for a high-level overview of Exposing APIs in Kubernetes.
