@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: f5devcentral/microservicesmarch:1.0.3
+          ports:
+            - containerPort: 80
+          env:
+            - name: MYSQL_USER
+              value: dan
+            - name: MYSQL_PASSWORD
+              value: dan
+            - name: MYSQL_DATABASE
+              value: sqlitraining
+            - name: DATABASE_HOSTNAME
+              value: db.default.svc.cluster.local
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30001
+  selector:
+    app: app
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+spec:
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+        - name: db
+          image: mariadb:10.3.32-focal
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: root
+            - name: MYSQL_USER
+              value: dan
+            - name: MYSQL_PASSWORD
+              value: dan
+            - name: MYSQL_DATABASE
+              value: sqlitraining
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+spec:
+  ports:
+    - port: 3306
+      targetPort: 3306
+  selector:
+    app: db

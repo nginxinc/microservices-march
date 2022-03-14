@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: curlimages/curl:7.72.0
+        command: [ "/bin/sh", "-c", "--" ]
+        args: [ "sleep 10; while true; do curl -s http://backend-svc/; sleep 1 && echo ' '; done" ]
