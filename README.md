@@ -37,7 +37,7 @@ This repo contains examples from the Microservices March lectures and hands-on l
 
 4. [Watch the demo walkthrough for commentary on what you'll be doing and why.](https://youtu.be/VxvMQOpn308)
 
-<h1>Lab 4: Reduce Downtime and Improve Resilience with a Canary Deployment</h1>
+<h1>Lab 4: Improve Kubernetes Uptime and Resilience with a Canary Deployment</h1>
 
 1. [Access the example files.](https://github.com/nginxinc/microservices-march/tree/main/Lab%204%20-%20Improve%20Kubernetes%20Uptime%20and%20Resilience%20with%20a%20Canary%20Deployment)
 
